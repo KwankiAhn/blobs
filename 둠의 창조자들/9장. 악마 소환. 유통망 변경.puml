@@ -1,0 +1,62 @@
+@startmindmap
+title 유통망 변경
+
+<style>
+mindmapDiagram {
+    .silver {
+        BackgroundColor silver
+    }
+    .green {
+        BackgroundColor lightgreen
+    }
+    .orange {
+        BackgroundColor #FFA500
+    }
+    .rose {
+        BackgroundColor #FFBBCC
+    }
+    .blue {
+        BackgroundColor lightblue
+    }
+    .white {
+        BackgroundColor #FFFFFF
+    }
+}
+node {
+    MaximumWidth 200
+}
+rootNode {
+    MaximumWidth 130
+}
+</style>
+
+* 소비자 구매
+** (기존 루트) 소매업자 <<blue>>
+***_ 셰어웨어 게임 디스크 판매\n통상 이에 대한 로열티 요구한다\n(from 게임 제작자)
+*** 소매업자 마진 <<orange>>
+*** 유통사 <<blue>>
+**** 유통사 마진 <<orange>>
+**** 배급사 (스콧, 어포지 事) <<blue>>
+***** 배급사 마진 <<orange>>
+***** 게임 개발사 (id 事) <<blue>>
+****** 게임 개발사 마진 <<orange>>
+******* 존 카멕
+******* 존 로메로
+******* 에이드리안
+******* 케빈
+******* 톰 -> 샌디
+****** 게임 개발사 운영 비용\n(컴퓨터, 건물)
+
+** (새로운 루트) 게임 개발사 (id 事) <<blue>>
+*** 게임 개발사 마진 <<orange>>
+**** 존 카멕
+**** 존 로메로
+**** 에이드리안
+**** 케빈
+**** 톰 -> 샌디
+*** 게임 개발사 운영 비용\n(컴퓨터, 건물)
+*** 배송업체 (배송비) <<blue>>
+** (새로운 루트) 소매업자 <<blue>>
+***_ 셰어웨어 게임 디스크 판매\n이에 대한 로열티 받지 않겠다\n(id 事: 어차피 대량 유통은 우리가 할 테니, 광고만 잘 해주면 된다.셰어 웨어 판매로 인한 수익은 다 가져라.)
+
+@endmindmap
