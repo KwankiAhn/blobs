@@ -1,0 +1,41 @@
+@startuml
+title 배급사 현황 1995
+
+left to right direction
+
+package "배급사 (GT 인터랙티브)" as GT
+rectangle "게임 매출 2년 만에 1,000만 달러 -> 3억 4,000만 달러" as r1
+GT .. r1
+
+
+package "개발사 (미드웨이))" as MIDWAY
+package "개발사 (id)" as ID
+rectangle "1995년 수입 1,560만 달러 (215억)" as r2
+ID .. r2
+
+package "개발 및 배급사 (윌리엄 엔터테인먼트)" as WilliamEntertainment
+package "개발 및 배급사 (Wizzard workds)" as WizzardWorks
+
+component "게임 (둠2)" as doom2
+component "게임 (퀘이크)" as quake
+component "게임 (모탈컴뱃)" as MortalCombat
+component "게임 (저가게임)" as LowPriceGames
+component "게임 (오락실게임)" as arcadeGames
+
+actor "영업담당 (마이크)" as PersonMike
+
+ID ~~ PersonMike
+
+GT -- doom2 : 1995.12월 US 판매액 8000만 달러 (1000억)
+GT -- quake
+GT -- MortalCombat
+GT -- arcadeGames
+GT -- LowPriceGames
+
+doom2 -- ID
+quake -- ID : (id의 신의 한수 계약 (by 마이크))quake 쉐어웨어 판권은 ID 가 소유\n쉐어웨어를 인터넷에 무료로 배포\nCD롬에 쉐어웨어 & 암호화된 전체 게임 버전 두가지를 모두 담아 판매 가능\n사람들은 9.95$에 쉐어웨어 구입 & 50달러 추가 지급 (전화로)하면 전체 게임 구매 가능\n결과적으로 id는 퀘이크 소매 유통권 없이 GT Interactive를 배제시킴 (자가배급 실현)\n1996년 GT Interactive와 대립
+MortalCombat -- MIDWAY
+arcadeGames -- WilliamEntertainment
+LowPriceGames -- WizzardWorks
+
+@enduml
